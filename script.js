@@ -1,6 +1,7 @@
-form.addEventListener("submit", getFormvalue);
-function getFormvalue(event){
+const form = document.getElementById("form1")
+
+function getFormvalue(){
 	// event.preventDefault();
-	alert(this.fname.value+" "+this.lname.value)
+	alert(form.elements["fname"].value+" "+form.elements["lname"].value)
 }
 
